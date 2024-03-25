@@ -98,6 +98,10 @@ vim.g.have_nerd_font = true
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+-- My custom settings
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -644,7 +648,7 @@ require('lazy').setup({
         -- is found.
         javascript = { { 'biome', 'prettierd', 'prettier' } },
         typescript = { { 'biome', 'prettierd', 'prettier' } },
-        css = { { 'biome', 'prettierd', 'prettier' } },
+        json = { { 'biome', 'prettierd', 'prettier' } },
       },
     },
   },

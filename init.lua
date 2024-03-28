@@ -553,7 +553,7 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = {},
+        tsserver = require 'custom.configs.tsserver',
         --
         -- Testing this thing out
         tailwindcss = {},
@@ -648,7 +648,7 @@ require('lazy').setup({
         -- is found.
         javascript = { { 'biome', 'prettierd', 'prettier' } },
         typescript = { { 'biome', 'prettierd', 'prettier' } },
-        json = { { 'biome', 'prettierd', 'prettier' } },
+        json = { { 'vscode-json-language-server' } },
       },
     },
   },

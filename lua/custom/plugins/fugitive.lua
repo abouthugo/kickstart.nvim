@@ -4,7 +4,7 @@ return {
     local Fugitive_Group = vim.api.nvim_create_augroup('Fugitive_Group', {})
     vim.keymap.set('n', '<leader>gs', function()
       vim.cmd ':0G'
-    end)
+    end, { desc = 'Open Git' })
     local autocmd = vim.api.nvim_create_autocmd
     autocmd('BufWinEnter', {
       group = Fugitive_Group,

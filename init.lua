@@ -161,6 +161,9 @@ vim.opt.scrolloff = 10
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Custom keymaps for tab navigation
+vim.keymap.set('n', '<leader>t', vim.cmd.tabnew, { desc = 'Create a new tab' })
+
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')

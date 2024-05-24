@@ -560,7 +560,6 @@ require('lazy').setup({
         -- Testing this thing out
         tailwindcss = {},
         eslint = {},
-        biome = {},
 
         cssls = {
           settings = {
@@ -601,7 +600,6 @@ require('lazy').setup({
       -- for you, so that they are available from within Neovim.
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
-        'biome', -- my preferred linter and formatter
         'prettierd', -- the d at the end is for daemon
         'eslint-lsp', -- all things eslint
         'tailwindcss-language-server', -- Used for tailwindcss
@@ -648,8 +646,8 @@ require('lazy').setup({
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
-        javascript = { { 'biome', 'prettierd', 'prettier' } },
-        typescript = { { 'biome', 'prettierd', 'prettier' } },
+        javascript = { { 'prettierd', 'prettier' } },
+        typescript = { { 'prettierd', 'prettier' } },
         json = { { 'vscode-json-language-server' } },
       },
     },

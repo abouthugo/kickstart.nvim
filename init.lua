@@ -546,7 +546,18 @@ require('lazy').setup({
       --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
       local servers = {
         -- clangd = {},
-        gopls = {},
+        gopls = {
+          settings = {
+            gopls = {
+              completeUnimported = true,
+              usePlaceholders = true,
+              analyses = {
+                unusedparams = true,
+              },
+              gofumpt = true,
+            },
+          },
+        },
         -- pyright = {},
         rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
@@ -607,6 +618,7 @@ require('lazy').setup({
         'css-lsp', -- CSS language server
         'typescript-language-server', -- Used for Typescript code
         'stylua', -- Used to format lua code
+        'gofumpt',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -641,6 +653,7 @@ require('lazy').setup({
       end,
       formatters_by_ft = {
         lua = { 'stylua' },
+        go = { 'gopls' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --

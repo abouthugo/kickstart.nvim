@@ -558,7 +558,7 @@ require('lazy').setup({
             },
           },
         },
-        -- pyright = {},
+        pyright = {},
         rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
@@ -619,6 +619,7 @@ require('lazy').setup({
         'typescript-language-server', -- Used for Typescript code
         'stylua', -- Used to format lua code
         'gofumpt',
+        'black', -- Python stuff
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

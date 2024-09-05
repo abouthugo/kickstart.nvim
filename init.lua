@@ -617,6 +617,7 @@ require('lazy').setup({
         -- 'css-variables-language-server', -- Used for autocompletion of css variables
         'css-lsp', -- CSS language server
         'typescript-language-server', -- Used for Typescript code
+        'astro-language-server', -- For Astro
         'stylua', -- Used to format lua code
         'gofumpt',
         'black', -- Python stuff

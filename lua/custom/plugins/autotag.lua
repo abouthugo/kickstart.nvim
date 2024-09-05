@@ -1,6 +1,7 @@
 return {
   'windwp/nvim-ts-autotag',
   ft = {
+    'astro',
     'javascript',
     'javascriptreact',
     'typescript',

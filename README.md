@@ -231,3 +231,10 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+# Best way to sync up fork
+
+- Create a branch based off `master` in upstream `git checkoub -b <branch_name> upstream/master`
+- Merge main into this newly created branch
+- Resolve any conflicts
+- Push local branch to origin
+- Open a PR and squash the merge commit

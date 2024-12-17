@@ -9,6 +9,12 @@ A starting point for Neovim that is:
 * Completely Documented
 
 **NOT** a Neovim distribution, but instead a starting point for your configuration.
+## Pre-reqs
+
+`vscode-json-language-server` can be installed via `npm`:
+```sh
+npm i -g vscode-langservers-extracted
+```
 
 ## Installation
 

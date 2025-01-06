@@ -6,6 +6,7 @@ return {
     'typescript',
     'typescriptreact',
     'html',
+    'markdown',
   },
   config = function()
     require('nvim-ts-autotag').setup()

@@ -9,6 +9,10 @@ return {
       vim.cmd ':DiffviewClose'
     end, { desc = 'Close DiffView' })
 
+    vim.keymap.set('n', '<leader>gdt', function()
+      vim.cmd ':DiffviewToggleFile'
+    end, { desc = 'Toggle Files' })
+
     vim.keymap.set('n', '<leader>gdh', function()
       vim.cmd ':DiffviewFileHistory %'
     end, { desc = 'Current File DiffView' })

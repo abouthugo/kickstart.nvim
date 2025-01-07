@@ -244,3 +244,14 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 - Resolve any conflicts
 - Push local branch to origin
 - Open a PR and squash the merge commit
+
+# Tips & Tricks
+If you need to clear the cache
+```sh
+rm -rf ~/.cache/nvim
+```
+If you need to reinstall Lazy or Mason packages:
+```sh
+rm -rf ~/.local/share/nvim/<Lazy or Mason>
+```
+

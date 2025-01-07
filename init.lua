@@ -636,7 +636,7 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        tsserver = require 'custom.configs.tsserver',
+        ts_ls = require 'custom.configs.tsserver',
         --
         -- Testing this thing out
         tailwindcss = {},

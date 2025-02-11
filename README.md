@@ -1,4 +1,4 @@
-# kickstart.nvim
+# Kickstart.nvim
 
 ## Introduction
 
@@ -244,3 +244,13 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 - Resolve any conflicts
 - Push local branch to origin
 - Open a PR and squash the merge commit
+
+# Error logs:
+- Fix the error with markdown files that says the following
+```
+Error detected while processing BufWritePost Autocommands for "*":
+Error running markdownlint: ENOENT: no such file or directory
+```
+Error was fixed by installing vale. Here is [the guide I found](https://docs.rockylinux.org/books/nvchad/vale_nvchad/#__tabbed_1_2).
+
+Make sure that you add `--config=$HOME/.config/vale/.vale.ini` to the `vale sync` command.

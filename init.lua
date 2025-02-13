@@ -699,7 +699,7 @@ require('lazy').setup({
         'astro-language-server', -- For Astro
         'stylua', -- Used to format lua code
         'gofumpt',
-        'black', -- Python stuff
+        -- 'black', -- Python stuff
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
